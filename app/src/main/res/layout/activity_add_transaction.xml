@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←   Add Transaction"
+                android:textColor="#111111"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <!-- Expense / Income Toggle -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_toggle"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/tvExpense"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Expense"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvIncome"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Income"
+                    android:textColor="#888888"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!-- Amount Card -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textColor="#8A94A6"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@android:color/transparent"
+                    android:hint="₹ 0.00"
+                    android:inputType="numberDecimal"
+                    android:textColor="#222222"
+                    android:textColorHint="#C9CED8"
+                    android:textSize="38sp"/>
+
+            </LinearLayout>
+
+            <!-- Category -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textColor="#8A94A6"
+                    android:textSize="14sp"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:columnCount="4"
+                    android:rowCount="2">
+
+                    <TextView
+                        android:id="@+id/category1"
+                        android:layout_width="0dp"
+                        android:layout_height="78dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🍽️&#10;Food"
+                        android:textColor="#333333"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/category2"
+                        android:layout_width="0dp"
+                        android:layout_height="78dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="✈️&#10;Travel"
+                        android:textColor="#333333"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/category3"
+                        android:layout_width="0dp"
+                        android:layout_height="78dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🛍️&#10;Shopping"
+                        android:textColor="#333333"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/category4"
+                        android:layout_width="0dp"
+                        android:layout_height="78dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🧾&#10;Bills"
+                        android:textColor="#333333"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/category5"
+                        android:layout_width="0dp"
+                        android:layout_height="78dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="⛽&#10;Petrol"
+                        android:textColor="#333333"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/category6"
+                        android:layout_width="0dp"
+                        android:layout_height="78dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🛒&#10;Grocery"
+                        android:textColor="#333333"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/category7"
+                        android:layout_width="0dp"
+                        android:layout_height="78dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="📦&#10;Other"
+                        android:textColor="#333333"
+                        android:textSize="13sp"/>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <!-- Title -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textColor="#8A94A6"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="e.g., Lunch at restaurant"
+                    android:padding="14dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <!-- Notes -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notes"
+                    android:textColor="#8A94A6"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input"
+                    android:gravity="top"
+                    android:hint="Add additional notes..."
+                    android:inputType="textMultiLine"
+                    android:padding="14dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <!-- Date -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="#8A94A6"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select date"
+                    android:padding="14dp"/>
+
+            </LinearLayout>
+
+            <!-- Save -->
+
+            <Button
+                android:id="@+id/btnSaveTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="22dp"
+                android:backgroundTint="#0B8F4D"
+                android:text="Save Transaction"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</LinearLayout>
